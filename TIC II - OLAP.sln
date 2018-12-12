@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "rentadm", "TIC II - OLAP\rentadm.dwproj", "{8C1BBD1E-3234-456D-9DFB-C768EC6C8D2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C1BBD1E-3234-456D-9DFB-C768EC6C8D2D}.Development|Default.ActiveCfg = Development
+		{8C1BBD1E-3234-456D-9DFB-C768EC6C8D2D}.Development|Default.Build.0 = Development
+		{8C1BBD1E-3234-456D-9DFB-C768EC6C8D2D}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1866379-6CDB-4A36-8DAD-3433BE3A1574}
+	EndGlobalSection
+EndGlobal

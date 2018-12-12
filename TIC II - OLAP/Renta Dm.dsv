@@ -1,0 +1,251 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8d8bc2fa-77c9-4522-ac4d-ed16c7fd9e03" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Renta Dm</ID>
+  <Name>Renta Dm</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Renta Dm 1</DataSourceID>
+  <Schema>
+    <xs:schema id="Renta_x0020_Dm" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Renta_x0020_Dm" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="286be50e-358b-4026-80fb-3b910c4bf18a">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="rentadm_dm_cliente" msprop:design-time-name="fe25e122-e709-41cd-87a7-da7f2d49a931" msprop:DbTableName="dm_cliente" msprop:FriendlyName="dm_cliente" msprop:DbSchemaName="rentadm" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_cliente" msprop:design-time-name="ae62f046-5a9a-4a88-a1a2-e48924aac639" msprop:DbColumnName="id_cliente" msprop:FriendlyName="id_cliente" type="xs:int" />
+                  <xs:element name="nombre" msprop:design-time-name="c8889770-4514-4ee5-ae5f-2ce627bac390" msprop:DbColumnName="nombre" msprop:FriendlyName="nombre">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="email" msprop:design-time-name="c7a08823-d04f-4920-8d47-3cc9428e6ce8" msprop:DbColumnName="email" msprop:FriendlyName="email">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="direccion" msprop:design-time-name="776c66b7-3f00-4ae2-a0e7-2a176bfb3474" msprop:DbColumnName="direccion" msprop:FriendlyName="direccion">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ciudad" msprop:design-time-name="b7e7742d-3ec1-4769-891e-896ded4df1fe" msprop:DbColumnName="ciudad" msprop:FriendlyName="ciudad">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pais" msprop:design-time-name="91d5dfeb-ceef-4185-b3b9-c39d6cd842f5" msprop:DbColumnName="pais" msprop:FriendlyName="pais">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="telefono" msprop:design-time-name="dd1a67ff-694c-42c3-a15f-6b4530102c05" msprop:DbColumnName="telefono" msprop:FriendlyName="telefono">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_direccion" msprop:design-time-name="c010807b-e30a-4db3-9407-23f565234b20" msprop:DbColumnName="id_direccion" msprop:FriendlyName="id_direccion" type="xs:int" />
+                  <xs:element name="id_ciudad" msprop:design-time-name="257d66cd-802f-4e5c-a689-a29403b223c9" msprop:DbColumnName="id_ciudad" msprop:FriendlyName="id_ciudad" type="xs:int" />
+                  <xs:element name="id_pais" msprop:design-time-name="a92783a1-5093-4964-b14d-023c8bbcffdf" msprop:DbColumnName="id_pais" msprop:FriendlyName="id_pais" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="rentadm_dm_fecha" msprop:design-time-name="7d6f2dba-e426-4fcc-859a-97a678790650" msprop:DbTableName="dm_fecha" msprop:FriendlyName="dm_fecha" msprop:DbSchemaName="rentadm" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="fecha" msprop:design-time-name="d5eec3c2-1606-427b-9fc5-3bbc55c62894" msprop:DbColumnName="fecha" msprop:FriendlyName="fecha" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_fecha" msprop:design-time-name="b010f752-fc4b-4637-8d65-9f55ad245c4a" msprop:DbColumnName="id_fecha" msprop:FriendlyName="id_fecha" type="xs:int" />
+                  <xs:element name="mes" msprop:design-time-name="85e029d6-dfa5-493a-aafd-07c04eae8aa9" msprop:DbColumnName="mes" msprop:FriendlyName="mes" type="xs:int" minOccurs="0" />
+                  <xs:element name="dia" msprop:design-time-name="95ff08e4-24ff-4446-baf5-ecb53a3166ec" msprop:DbColumnName="dia" msprop:FriendlyName="dia" type="xs:int" minOccurs="0" />
+                  <xs:element name="semana" msprop:design-time-name="ab0114b6-91b7-4a0c-bbdd-3d0ca8838bbe" msprop:DbColumnName="semana" msprop:FriendlyName="semana" type="xs:int" minOccurs="0" />
+                  <xs:element name="trimestre" msprop:design-time-name="41463c9d-0550-42f5-86d2-e79c3e4be6c3" msprop:DbColumnName="trimestre" msprop:FriendlyName="trimestre" type="xs:int" minOccurs="0" />
+                  <xs:element name="año" msprop:design-time-name="d24dae05-f580-475c-97a9-1d3705961044" msprop:DbColumnName="año" msprop:FriendlyName="año" type="xs:int" minOccurs="0" />
+                  <xs:element name="nombre_mes" msprop:design-time-name="30d6f966-34f3-45c8-83f1-7db7a6fc82a5" msprop:DbColumnName="nombre_mes" msprop:FriendlyName="nombre_mes" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="dia_semana" msprop:design-time-name="9338f652-bf30-441d-bac6-6a9992aec06d" msprop:DbColumnName="dia_semana" msprop:FriendlyName="dia_semana" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="año_semana" msprop:design-time-name="cf169fac-2936-40f7-8c40-d537088d0ffd" msprop:DbColumnName="año_semana" msprop:FriendlyName="año_semana" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="rentadm_dm_pelicula" msprop:design-time-name="2b6772ac-7666-4843-91a0-a7af6ad0cc05" msprop:DbTableName="dm_pelicula" msprop:FriendlyName="dm_pelicula" msprop:DbSchemaName="rentadm" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_pelicula" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="e0c17c9a-1140-4329-bfd1-7c928233880f" msprop:DbColumnName="id_pelicula" msprop:FriendlyName="id_pelicula" type="xs:int" />
+                  <xs:element name="nombre" msprop:design-time-name="adf2db7c-064a-4491-b1ce-2be367e7c420" msprop:DbColumnName="nombre" msprop:FriendlyName="nombre">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="rating" msprop:design-time-name="3c96703d-1a5d-4eb5-a5ff-e704b199438f" msprop:DbColumnName="rating" msprop:FriendlyName="rating">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="duracion_renta" msprop:design-time-name="033250ab-153f-4305-bc14-30fd7a4dac57" msprop:DbColumnName="duracion_renta" msprop:FriendlyName="duracion_renta" type="xs:int" />
+                  <xs:element name="precio_renta" msprop:design-time-name="4e16cd8e-6131-4ab2-aefd-c0f5209c755b" msprop:DbColumnName="precio_renta" msprop:FriendlyName="precio_renta" type="xs:decimal" />
+                  <xs:element name="duracion" msprop:design-time-name="7ac91183-26e9-4cd0-a9dc-9d53107145ec" msprop:DbColumnName="duracion" msprop:FriendlyName="duracion" type="xs:int" />
+                  <xs:element name="costo_reemplazo" msprop:design-time-name="26fc3f39-f02a-46d7-81e1-008ee3b54b8d" msprop:DbColumnName="costo_reemplazo" msprop:FriendlyName="costo_reemplazo" type="xs:int" />
+                  <xs:element name="inventario_id" msprop:design-time-name="4ce2e01b-ad69-4fe1-9990-425f8e94bae4" msprop:DbColumnName="inventario_id" msprop:FriendlyName="inventario_id" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="rentadm_dm_tienda" msprop:design-time-name="92cfab36-9994-4ee7-a2de-d0758631bef5" msprop:DbTableName="dm_tienda" msprop:FriendlyName="dm_tienda" msprop:DbSchemaName="rentadm" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_tienda" msprop:design-time-name="4b8d2978-dab7-40ab-ab77-53bcfb414ee6" msprop:DbColumnName="id_tienda" msprop:FriendlyName="id_tienda" type="xs:int" />
+                  <xs:element name="direccion" msprop:design-time-name="85573120-e979-4026-9495-1e30322595fd" msprop:DbColumnName="direccion" msprop:FriendlyName="direccion">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ciudad" msprop:design-time-name="c624b575-41ad-4f1f-9724-9cad8096a9e0" msprop:DbColumnName="ciudad" msprop:FriendlyName="ciudad">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pais" msprop:design-time-name="d5a9c809-b170-416a-8c21-9457fd84fb32" msprop:DbColumnName="pais" msprop:FriendlyName="pais">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_ciudad" msprop:design-time-name="e16fb743-0534-4023-89fe-ba6e2df361d8" msprop:DbColumnName="id_ciudad" msprop:FriendlyName="id_ciudad" type="xs:int" />
+                  <xs:element name="id_direccion" msprop:design-time-name="443d5b76-0709-4c55-bcb1-7c4935bece4d" msprop:DbColumnName="id_direccion" msprop:FriendlyName="id_direccion" type="xs:int" />
+                  <xs:element name="id_pais" msprop:design-time-name="a8a18f60-5f31-4f8c-a910-cade1094e6b2" msprop:DbColumnName="id_pais" msprop:FriendlyName="id_pais" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="rentadm_hc_rentas" msprop:design-time-name="38c7dd5e-4158-4c3c-a59a-05c0c1ef6a31" msprop:DbTableName="hc_rentas" msprop:FriendlyName="hc_rentas" msprop:DbSchemaName="rentadm" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="importe" msprop:design-time-name="f8f8d765-08e9-4877-826e-0897b62adf03" msprop:DbColumnName="importe" msprop:FriendlyName="importe" type="xs:decimal" />
+                  <xs:element name="tiempo_id" msprop:design-time-name="66a5b8d9-c9a8-4b45-b22a-e0ade767e6e0" msprop:DbColumnName="tiempo_id" msprop:FriendlyName="tiempo_id" type="xs:int" />
+                  <xs:element name="tienda_id" msprop:design-time-name="eef0af8c-e079-4726-8a58-1642364e7dc5" msprop:DbColumnName="tienda_id" msprop:FriendlyName="tienda_id" type="xs:int" />
+                  <xs:element name="cliente_id" msprop:design-time-name="c5dab54d-3e10-4366-8677-aa006150b1a7" msprop:DbColumnName="cliente_id" msprop:FriendlyName="cliente_id" type="xs:int" />
+                  <xs:element name="pelicula_id" msprop:design-time-name="111be122-aa91-4fc6-8be3-653c07c2b30e" msprop:DbColumnName="pelicula_id" msprop:FriendlyName="pelicula_id" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//rentadm_dm_cliente" />
+          <xs:field xpath="id_cliente" />
+        </xs:unique>
+        <xs:unique name="rentadm_dm_fecha_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//rentadm_dm_fecha" />
+          <xs:field xpath="id_fecha" />
+        </xs:unique>
+        <xs:unique name="rentadm_dm_pelicula_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//rentadm_dm_pelicula" />
+          <xs:field xpath="id_pelicula" />
+        </xs:unique>
+        <xs:unique name="Constraint2">
+          <xs:selector xpath=".//rentadm_dm_pelicula" />
+          <xs:field xpath="inventario_id" />
+        </xs:unique>
+        <xs:unique name="rentadm_dm_tienda_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//rentadm_dm_tienda" />
+          <xs:field xpath="id_tienda" />
+        </xs:unique>
+        <xs:unique name="rentadm_hc_rentas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//rentadm_hc_rentas" />
+          <xs:field xpath="tiempo_id" />
+          <xs:field xpath="tienda_id" />
+          <xs:field xpath="cliente_id" />
+          <xs:field xpath="pelicula_id" />
+        </xs:unique>
+        <xs:keyref name="hc_rentas_x0024_hc_rentas_ibfk_3" refer="Constraint1">
+          <xs:selector xpath=".//rentadm_hc_rentas" />
+          <xs:field xpath="cliente_id" />
+        </xs:keyref>
+        <xs:keyref name="hc_rentas_x0024_hc_rentas_ibfk_2" refer="rentadm_dm_tienda_Constraint1">
+          <xs:selector xpath=".//rentadm_hc_rentas" />
+          <xs:field xpath="tienda_id" />
+        </xs:keyref>
+        <xs:keyref name="hc_rentas_x0024_hc_rentas_ibfk_1" refer="rentadm_dm_fecha_Constraint1">
+          <xs:selector xpath=".//rentadm_hc_rentas" />
+          <xs:field xpath="tiempo_id" />
+        </xs:keyref>
+        <xs:keyref name="hc_rentas_x0024_hc_rentas_ibfk_4" refer="Constraint2">
+          <xs:selector xpath=".//rentadm_hc_rentas" />
+          <xs:field xpath="pelicula_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Renta_x0020_Dm xmlns="" />
+  </Schema>
+</DataSourceView>

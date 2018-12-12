@@ -1,0 +1,243 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cf4e115f-5316-4c86-9c38-9082162be22b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Renta Dm</ID>
+  <Name>Renta Dm</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="18776227-323b-457b-9f82-ef01aad46bb2">
+      <ID>Dm Cliente</ID>
+      <Name>Dm Cliente</Name>
+      <DimensionID>Dm Cliente</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a70e63ab-fe26-49b0-b3a2-fb1d838a0851">
+          <AttributeID>Id Cliente</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ac744f04-400c-4a26-ad4e-856764489409">
+          <AttributeID>Direccion</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1aad7ae-517f-486c-9ff5-de694b8cff61">
+          <AttributeID>Ciudad</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="19f34db6-6075-498e-a220-7156be007858">
+          <AttributeID>Pais</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="080f4223-830b-45ad-85e4-ae8cf8170e56">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="589c2180-d030-4a0b-b386-870ba3319a71">
+      <ID>Dm Tienda</ID>
+      <Name>Dm Tienda</Name>
+      <DimensionID>Dm Tienda</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5aa75a0a-4e98-4c1c-91d4-06f40355b4a4">
+          <AttributeID>Id Tienda</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dfdcb5df-a66d-4831-8f7d-acb8a0c56fcf">
+          <AttributeID>Direccion</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e6449200-36d6-4bfd-b0b9-ea0adbd105f8">
+          <AttributeID>Pais</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="579bd885-3dbb-4dbf-9694-e609cab4f53e">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="578d784d-5fe7-4d16-bbea-19fdc000e500">
+      <ID>Dm Fecha</ID>
+      <Name>Dm Fecha</Name>
+      <DimensionID>Dm Fecha</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8e1688a3-b17d-4bb7-8313-7d4334799d02">
+          <AttributeID>Id Fecha</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b0fafd53-01ea-4703-bcb6-0f5be4453414">
+          <AttributeID>Semana</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="95c307b0-4dfa-41e2-a8bd-d8d75745c6c4">
+          <AttributeID>Trimestre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8c801cf6-e2aa-4156-9b24-34c48b7a25b1">
+          <AttributeID>Año</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b5fbe7c6-83ff-4a4c-80a8-47e5157572d3">
+          <AttributeID>Nombre Mes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b24cfca1-daa4-4544-a4ee-4ac24adc1a38">
+          <AttributeID>Dia Semana</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="3f906425-6be1-4500-80e9-63b2111d7361">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="0a755310-3ab8-441a-95b3-ff98a17ebf14">
+      <ID>Dm Pelicula</ID>
+      <Name>Dm Pelicula</Name>
+      <DimensionID>Dm Pelicula</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f1a34955-5eb6-4617-9ab7-f02e3af4d281">
+          <AttributeID>Id Pelicula</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a500cf36-da3e-44e1-b4cc-d227f9c763a5">
+          <AttributeID>Inventario Id</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="cd2867e9-be17-4102-bdec-11f22ef025f1">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="97c9ed4c-c496-451f-b817-42ffaf7b3002">
+      <ID>Hc Rentas</ID>
+      <Name>Hc Rentas</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="14578fa5-ee55-49f6-b66d-bdc3bcba2ed0">
+          <ID>Importe</ID>
+          <Name>Importe</Name>
+          <Source dwd:design-time-name="7997a8b1-75bc-4567-9d2d-4c3e1fb9332d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4ebee8b1-7041-4c93-badb-db7b3b899244">
+              <TableID>rentadm_hc_rentas</TableID>
+              <ColumnID>importe</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2e5a68dd-6a20-4835-befd-20b62ad9ea36">
+          <CubeDimensionID>Dm Cliente</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f4d3e8d3-5635-42c8-bc3c-77171a7016f7">
+              <AttributeID>Id Cliente</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="45dbcf5c-9116-403d-ad13-aa5702309582">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0122e19d-81f5-44d3-9c38-b270beb695e9">
+                    <TableID>rentadm_hc_rentas</TableID>
+                    <ColumnID>cliente_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="491bdec7-80a1-46a3-b600-baab6fa84101">
+          <CubeDimensionID>Dm Tienda</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bf62f264-0dd5-4ace-9c46-ecb4a2461ed4">
+              <AttributeID>Id Tienda</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0af97337-a4ed-4ab0-b28b-84b656f01081">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="89f38d1e-9eca-4bfb-8e24-e4a469719ff3">
+                    <TableID>rentadm_hc_rentas</TableID>
+                    <ColumnID>tienda_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="71de0752-15a5-4b80-b02c-759999a3bee8">
+          <CubeDimensionID>Dm Fecha</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="85fc97e7-372d-42f6-bde2-3f612ece0421">
+              <AttributeID>Id Fecha</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="77714a1f-999e-4fe2-97cf-1bdd9e27481b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8f52241b-cd31-47e6-9492-23e5030ef976">
+                    <TableID>rentadm_hc_rentas</TableID>
+                    <ColumnID>tiempo_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3190e51c-ed7a-430e-ab6f-a77c9cc1b658">
+          <CubeDimensionID>Dm Pelicula</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="38d0673e-9aed-467b-9011-030591595f54">
+              <AttributeID>Inventario Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1a8ad304-12dd-4a44-bdb8-0016db35a384">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f30a471d-bbfb-400f-ad17-2b6256f909c2">
+                    <TableID>rentadm_hc_rentas</TableID>
+                    <ColumnID>pelicula_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="e6d642e3-0cf1-440d-bf64-d4f5cd05aea2">
+    <DataSourceViewID>Renta Dm</DataSourceViewID>
+  </Source>
+</Cube>
